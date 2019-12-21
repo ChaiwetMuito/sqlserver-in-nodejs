@@ -37,7 +37,7 @@ app.get('/', function (req, res) {
     });
 });
 
-var server = app.listen(5000, function () {
+var server = app.listen(3000, function () {
     console.log('Server is running..');
 });
 ```
@@ -68,6 +68,11 @@ request.query('select * from employee', function (err, recordset) {
             res.send(recordset);
             
         });
+```
+### 6. run api
+```
+node server.js
+และไปดูที่ localhost:3000
 ```
 
 ### ศึกษาเพิ่มเติมจาก
